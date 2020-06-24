@@ -1,0 +1,21 @@
+  <ag-grid-angular
+  #agGrid
+  style="width: 100%; height: 97%;"
+  id="myGrid"
+  class="ag-theme-balham"
+  [modules]="modules"
+  [columnDefs]="columnDefs"
+  [defaultColDef]="defaultColumnDef"
+  suppressMenuHide="true"
+  [rowData]="rowData0"
+  [getContextMenuItems]="getContextMenuItems"
+  deltaRowDataMode=true
+  [floatingFilter]="true"
+  [getRowNodeId]="getRowNodeId"
+  (gridReady)="onGridReady($event)"
+  [enableCharts]="true"
+  [enableRangeSelection]="true"
+  (firstDataRendered)="onFirstDataRendered($event)"
+  [suppressPropertyNamesCheck]="true"
+  [immutableData]="true"
+></ag-grid-angular>

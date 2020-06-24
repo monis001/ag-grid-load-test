@@ -1,0 +1,19 @@
+<!-- Non Immutable case -->
+<div class="container">
+    <div class="row" *ngFor="let items of [1,2,3,4,5,6,7]"> 
+        <div class="col-md-12">
+            <!-- maximum 7 tables -->
+            <app-ag-grid [serverConfig]='serverConfig'></app-ag-grid>
+        </div>
+    </div>
+</div>
+
+<!-- Immutable CASE -->
+<div class="container">
+    <div class="row" *ngFor="let items of [1,2,3,4,5,6,7]"> 
+        <div class="col-md-12">
+            <!-- maximum 7 tables -->
+            <app-ag-grid-immutable [serverConfig]='serverConfig'></app-ag-grid-immutable>
+        </div>
+    </div>
+</div>
