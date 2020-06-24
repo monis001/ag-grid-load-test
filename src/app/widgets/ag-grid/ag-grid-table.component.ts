@@ -1,3 +1,7 @@
+/**
+ * See : socketFetchData method for actual action
+ */
+
 import { Component, OnInit, Input } from "@angular/core";
 import {
     AllModules,
@@ -79,8 +83,6 @@ export class AgGridWidgetComponent implements OnInit{
     Scenreo-1 : 
       => If column-C value is greater than 500, apply red background color and yellow text-color to column-A 
          i.e. {column-C} > 500 than column-A {color: '#FFFF00', backgroundColor: '#FFFF00'};
-    
-    Scenreo-2 :
     */
     private cellStyling(params){
         let cellStyling = {color: '#000', backgroundColor: '#fff'};
@@ -200,6 +202,7 @@ export class AgGridWidgetComponent implements OnInit{
     private someServiceWillCallSocket(config, callBack){
 
     }
+
     /**
      * 
      * @param dataFromSocket : Actual data send by socket

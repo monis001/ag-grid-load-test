@@ -1,3 +1,6 @@
+/**
+ * See : socketFetchData method for actual action
+ */
 import { Component, OnInit } from "@angular/core";
 import { Module, AllModules } from '@ag-grid-enterprise/all-modules';
 import { config } from 'process';
@@ -182,10 +185,6 @@ private dataFetch(){
         // this.applyFiltersAndSort(event); // set Sort-Model and filter-model
     }
 
-    private columnCreation(){
-
-    }
-    
     /**
     * Some configuration and socket setup
     */
@@ -248,7 +247,7 @@ private dataFetch(){
         }
         const val = Object.keys(this.nodeIdMapper).map(items => this.nodeIdMapper[items]);
         
-        this.gridApi.setRowData(val);
+        this.gridApi.setRowData(val); // JSUT SET ROW DATA once done with all objects
         this.gridApi.flashCells({
           rowNodes:rowNodes
         });
